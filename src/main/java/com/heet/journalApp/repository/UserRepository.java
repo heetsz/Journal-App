@@ -5,5 +5,5 @@ import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface UserRepository extends MongoRepository<User, ObjectId> {
-    User findByUserName(String username);
+    User findByUserName(String username); // Spring generates this query for you at runtime
 }
